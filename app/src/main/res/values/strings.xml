@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">APP de Notícias</string>
+
+    <string name="drawer_open">Abrir menu</string>
+    <string name="drawer_close">Close menu</string>
+
+    <string name="message_no_wifi_title">Não foi possível se conectar ao servidor.</string>
+    <string name="message_no_wifi_subtitle">Pressione para tentar novamente.</string>
+
+    <string name="activity_read_title_format">Ler | <xliff:g id="news_title">%1$s</xliff:g></string>
+</resources>

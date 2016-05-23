@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDate"
+        android:layout_toRightOf="@+id/txtTitle"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text="This is a good Post, I hope it will have 2 lines. Please give me 2 lines"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/feed_post_title_font"
+            android:ellipsize="end"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:layout_marginTop="@dimen/feed_post_date_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgDate"
+                android:src="@drawable/icon_post_date"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="April 12, 2013"
+                android:textSize="@dimen/feed_post_date_font"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/gray_light" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgTime"
+                android:src="@drawable/icon_post_time"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="12:00"
+                android:textSize="@dimen/feed_post_date_font"
+                android:textColor="@color/gray_light" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

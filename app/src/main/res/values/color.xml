@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GENERAL COLORS -->
+    <color name="gray_ultra_light">#ffeeeeee</color>
+    <color name="gray_light">#ff999999</color>
+    <color name="gray_dark">#ff333333</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+
+
+    <!-- THEME COLORS -->
+    <color name="theme_light">#ff4d7bb9</color> <!-- #ff58b3fb -->
+    <color name="theme">#ff00468C</color> <!-- #ff4d7bb9 -->
+    <color name="theme_dark">#ff002040</color> <!-- #ff4a588e -->
+
+    <color name="post_header_background">#ff111111</color>
+    <color name="post_header_title_font">#ffffffff</color>
+    <color name="post_header_subtitle_font">#ff999999</color>
+    <color name="post_picture_subtitle_font">#ff999999</color>
+
+</resources>

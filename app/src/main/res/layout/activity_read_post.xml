@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <com.zelius.webext.override.InterceptScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_post">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="@dimen/post_padding_vertical"
+            android:paddingBottom="@dimen/post_padding_vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/post_header_background"
+                android:paddingBottom="@dimen/post_header_padding_vertical"
+                android:paddingTop="@dimen/post_header_padding_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtHeaderDate"
+                    android:textColor="@color/gray_light"
+                    android:paddingLeft="@dimen/post_padding_horizontal"
+                    android:paddingRight="@dimen/post_padding_horizontal"
+                    android:gravity="right"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/txtTitle"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/post_title_size"
+                    android:paddingRight="@dimen/post_padding_horizontal"
+                    android:paddingLeft="@dimen/post_padding_horizontal"
+                    android:textColor="@color/post_header_title_font" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSubtitle"
+                    android:textSize="@dimen/post_subtitle_size"
+                    android:paddingLeft="@dimen/post_padding_horizontal"
+                    android:paddingRight="@dimen/post_padding_horizontal"
+                    android:textColor="@color/post_header_subtitle_font"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPicture"
+                android:textColor="@color/post_picture_subtitle_font"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/post_elements_spacing"
+                android:paddingRight="@dimen/post_padding_horizontal"
+                android:paddingLeft="@dimen/post_padding_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txtBody"
+                android:paddingLeft="@dimen/post_padding_horizontal"
+                android:paddingRight="@dimen/post_padding_horizontal"
+                android:textColorLink="@color/theme"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txtFooter"
+                android:paddingLeft="@dimen/post_padding_horizontal"
+                android:paddingRight="@dimen/post_padding_horizontal"
+                android:layout_marginTop="@dimen/post_elements_spacing" />
+        </LinearLayout>
+    </com.zelius.webext.override.InterceptScrollView>
+
+</LinearLayout>

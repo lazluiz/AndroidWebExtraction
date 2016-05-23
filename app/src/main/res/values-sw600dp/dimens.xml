@@ -1,0 +1,20 @@
+<resources>
+    <!-- THEME DIMENSIONS -->
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+
+    <dimen name="feed_post_title_font">24sp</dimen>
+    <dimen name="feed_post_date_margin">10dp</dimen>
+    <dimen name="feed_post_date_font">18sp</dimen>
+
+    <dimen name="list_header_font_size">46sp</dimen>
+    <dimen name="list_header_padding_vertical">10dp</dimen>
+
+    <dimen name="post_padding_horizontal">10dp</dimen>
+    <dimen name="post_padding_vertical">0dp</dimen>
+    <dimen name="post_header_padding_vertical">15dp</dimen>
+    <dimen name="post_menu_title_size">24sp</dimen>
+    <dimen name="post_title_size">32sp</dimen>
+    <dimen name="post_subtitle_size">18sp</dimen>
+    <dimen name="post_elements_spacing">14dp</dimen>
+</resources>
